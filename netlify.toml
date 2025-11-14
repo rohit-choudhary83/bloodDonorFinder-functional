@@ -1,0 +1,8 @@
+[build]
+  publish = "bloodDonorFinder" # Directory containing your static assets
+  functions = "netlify/functions" # Directory for Netlify Functions
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
